@@ -135,7 +135,7 @@ public class SafeConverter
 							//If Convert To is Fahrenheit
 							if(fina == "F")
 							{
-								newTemp = (tempToConvert+32)*(9.0/5.0);
+								newTemp = (tempToConvert)*(9.0/5.0) + 32;
 								newText = "Temp in F: " + String.format("%.2f",newTemp);
 							}
 							//If Convert To is Celsius
@@ -156,7 +156,7 @@ public class SafeConverter
 							//If Convert To is Fahrenheit
 							if(fina == "F")
 							{
-								newTemp = (tempToConvert-32)*(5.0/9.0);
+								newTemp = (tempToConvert-273)*(9.0/5.0) + 32;
 								newText = "Temp in F: " + String.format("%.2f",newTemp);
 							}
 							//If Convert To is Celsius
